@@ -8,15 +8,13 @@ namespace Survey
         {
             Console.WriteLine("What is your name?");
 
-            var name = TryAgain();
-
-    
+            var name = TryAnswer();
 
             Console.WriteLine("What is your age?");
-            var age = TryAgain();
+            var age = TryAnswer();
 
             Console.WriteLine("What month were you born in?");
-            var month = TryAgain();
+            var month = TryAnswer();
 
             Console.WriteLine("Your name is: {0}", name);
             Console.WriteLine("Your age is: {0}", age);
@@ -35,8 +33,7 @@ namespace Survey
                 Console.WriteLine("You are a Gemini.");
             }
         }
-
-        static string TryAgain()
+        static string TryAnswer()
         {
             var answer = Console.ReadLine();
             if (answer == "")
